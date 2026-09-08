@@ -1,0 +1,30 @@
+{
+  "id": 243,
+  "key": "243",
+  "slug": "multi-search-engine",
+  "title": "多引擎搜索",
+  "summary": "适合需要快速在多个国内外搜索引擎中查找信息的用户，包括学生、研究人员、内容创作者和普通网民。",
+  "description": "适合需要快速在多个国内外搜索引擎中查找信息的用户，包括学生、研究人员、内容创作者和普通网民。",
+  "intro": "一键调用17个国内外搜索引擎，支持高级搜索、时间筛选和知识查询，无需API密钥。",
+  "logo": "https://canpan-mind-spark.oss-cn-zhangjiakou.aliyuncs.com/openclaw/skills/manual/oss-tool/0376c6dc80cf4ce19b810f3a66eecd22.png",
+  "icon": "多",
+  "iconBg": "rgba(37, 99, 235, 0.14)",
+  "iconColor": "#60a5fa",
+  "badge": "官方推荐",
+  "packageUrl": "https://canpan-mind-spark.oss-cn-zhangjiakou.aliyuncs.com/openclaw/skills/manual/oss-tool/e8779fc4ca2a417089f0d6eb075dcaa2.zip",
+  "points": [
+    "整合8个国内和9个国际主流搜索引擎，覆盖百度、谷歌、微信搜一搜等",
+    "支持高级搜索语法，如站内搜索、文件类型限定、精确匹配和排除关键词",
+    "可按过去一小时、一天、一周等时间段筛选最新结果",
+    "内置隐私保护引擎，如DuckDuckGo、Brave和Startpage，保护搜索隐私",
+    "支持WolframAlpha进行单位换算、数学计算和实时数据查询"
+  ],
+  "prompt": "帮我用多个搜索引擎查一下最近的人工智能新闻",
+  "previewImage": "https://canpan-mind-spark.oss-cn-zhangjiakou.aliyuncs.com/openclaw/skills/manual/oss-tool/0376c6dc80cf4ce19b810f3a66eecd22.png",
+  "previewText": "",
+  "previewLabel": "https://canpan-mind-spark.oss-cn-zhangjiakou.aliyuncs.com/openclaw/skills/manual/oss-tool/0376c6dc80cf4ce19b810f3a66eecd22.png",
+  "typeId": 2,
+  "typeName": "数据智能",
+  "installedAt": 1776673637256,
+  "version": ""
+}

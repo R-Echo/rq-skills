@@ -1,0 +1,10 @@
+{
+  "name": "multi-search-engine",
+  "version": "3.0.0",
+  "description": "智能多引擎搜索策略器。17 搜索引擎 + 意图识别 + 场景模板 + 降级链 + 结果聚合。零 API key，开箱即用。",
+  "engines": 17,
+  "scenes": 8,
+  "requires_api_key": false,
+  "tags": ["search", "multi-engine", "web-crawl", "privacy", "news", "academic", "shopping"],
+  "changelog": "v3.0.0: 从 URL 列表升级为智能搜索策略器（意图识别 + 8 场景模板 + 降级链 + 聚合搜索）"
+}

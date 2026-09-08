@@ -1,0 +1,33 @@
+{
+  "name": "multi-search-engine",
+  "version": "3.0.0",
+  "engines": [
+    {"name": "Baidu", "url": "https://www.baidu.com/s?wd={keyword}", "region": "cn", "scenes": ["商品", "新闻", "人物", "综合"]},
+    {"name": "Bing CN", "url": "https://cn.bing.com/search?q={keyword}&ensearch=0", "region": "cn", "scenes": ["综合"]},
+    {"name": "Bing INT", "url": "https://cn.bing.com/search?q={keyword}&ensearch=1", "region": "cn", "scenes": ["综合"]},
+    {"name": "360", "url": "https://www.so.com/s?q={keyword}", "region": "cn", "scenes": ["综合"]},
+    {"name": "Sogou", "url": "https://sogou.com/web?query={keyword}", "region": "cn", "scenes": ["综合"]},
+    {"name": "WeChat", "url": "https://wx.sogou.com/weixin?type=2&query={keyword}", "region": "cn", "scenes": ["新闻", "人物"]},
+    {"name": "Toutiao", "url": "https://so.toutiao.com/search?keyword={keyword}", "region": "cn", "scenes": ["新闻", "商品"]},
+    {"name": "Jisilu", "url": "https://www.jisilu.cn/explore/?keyword={keyword}", "region": "cn", "scenes": ["商品"]},
+    {"name": "Google", "url": "https://www.google.com/search?q={keyword}", "region": "global", "scenes": ["代码", "学术", "新闻", "人物", "综合"]},
+    {"name": "Google HK", "url": "https://www.google.com.hk/search?q={keyword}", "region": "global", "scenes": ["综合"]},
+    {"name": "DuckDuckGo", "url": "https://duckduckgo.com/html/?q={keyword}", "region": "global", "scenes": ["代码", "隐私", "综合"]},
+    {"name": "Yahoo", "url": "https://search.yahoo.com/search?p={keyword}", "region": "global", "scenes": ["综合"]},
+    {"name": "Startpage", "url": "https://www.startpage.com/sp/search?query={keyword}", "region": "global", "scenes": ["隐私"]},
+    {"name": "Brave", "url": "https://search.brave.com/search?q={keyword}", "region": "global", "scenes": ["新闻", "隐私", "代码", "综合"]},
+    {"name": "Ecosia", "url": "https://www.ecosia.org/search?q={keyword}", "region": "global", "scenes": ["综合"]},
+    {"name": "Qwant", "url": "https://www.qwant.com/?q={keyword}", "region": "global", "scenes": ["隐私"]},
+    {"name": "WolframAlpha", "url": "https://www.wolframalpha.com/input?i={keyword}", "region": "global", "scenes": ["计算"]}
+  ],
+  "scenes": {
+    "代码": {"primary": "Google", "fallback": ["DuckDuckGo", "Brave"], "operators": ["site:github.com", "site:stackoverflow.com"]},
+    "学术": {"primary": "Google Scholar", "fallback": ["Google", "Baidu"], "operators": ["filetype:pdf"]},
+    "商品": {"primary": "Baidu", "fallback": ["Google", "Toutiao"], "operators": []},
+    "新闻": {"primary": "Google", "fallback": ["Brave", "Baidu"], "operators": ["tbm=nws", "tbs=qdr:d"]},
+    "人物": {"primary": "Google", "fallback": ["Baidu", "DuckDuckGo"], "operators": ["%22%22"]},
+    "隐私": {"primary": "DuckDuckGo", "fallback": ["Startpage", "Brave"], "operators": []},
+    "计算": {"primary": "WolframAlpha", "fallback": ["Google", "Baidu"], "operators": []},
+    "综合": {"primary": "Google", "fallback": ["Bing CN", "Brave"], "operators": []}
+  }
+}
