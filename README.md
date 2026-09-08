@@ -1,4 +1,4 @@
-﻿# rq-skills
+# rq-skills
 
 R-Echo / Rico 的公开技能集合。
 
@@ -41,4 +41,4 @@ multi-search-engine/
 
 ## License
 
-See the repository contents and upstream project terms for applicable licensing.
+This repository is licensed under the [MIT License](LICENSE).
